@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Load css style file-->
+<head>
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Tip Calculator</title>
+</head>
+
+<body>
+  <div id="container">
+    
+    <h1>Tip Calculator</h1>
+    <hr>
+    <div>
+      <label><b>Bill amount:</b></label>
+      <input type="text" placeholder="Enter Amount" id="billTotal" >
+    </div>
+    <div>
+      <label><b>Tip percentage:</b></label>
+      <input type="Number" min="1" max="100" placeholder="Enter tip %" id="tipInput">
+      <span id="tipOutPut"></span>
+    </div>
+    <div>
+      <label><b>Number of people:</b></label>
+      <input type="number" min="1" max="" value="1" id="splitInput">
+      <span id="splitOutPut"></span>
+    </div>
+    <hr>
+    <div>
+      <div>
+        <label><b>Total amount (per person):</b></label><span id="newBill"> 0</span>
+      </div>
+    </div>
+    <div>
+      <div>
+        <label><b>Tip Amount (per person):</b></label><span id="tipAmount"> 0</span>
+      </div>
+    </div>
+  </div>
+  <!--Load Javascript-->
+  <script src="script.js"></script>
+</body>
+
+</html> 
